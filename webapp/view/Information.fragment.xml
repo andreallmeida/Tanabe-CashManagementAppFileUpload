@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ResponsivePopover
+		id="_IDPoOverInformation"
+		title="{i18n>Information}"
+		class="sapUiContentPadding"
+        showHeader="true"
+		placement="Bottom">
+        <TextArea id="_IDTextAreaInformation" 
+            width="300px" 
+            growing="true" 
+            editable="false" 
+            showExceededText="true" 
+            value="{i18n>InformationContent}" />
+	</ResponsivePopover>
+</core:FragmentDefinition>

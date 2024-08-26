@@ -1,0 +1,34 @@
+<mvc:View controllerName="tanabe.cashmanagement.filecontentupload.controller.Upload"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:u="sap.ui.unified"
+    xmlns:l="sap.ui.layout"
+    >
+    <Page id="page" title="{i18n>title}">
+
+        <headerContent>
+            <Button id="_IDButtonDoc"
+            icon="sap-icon://information"
+            press="_onPressInformationButton"/>            
+        </headerContent>
+
+        <content>
+            <l:VerticalLayout id="_IDGenVerticalLayout1">
+                <u:FileUploader
+                    id="idfileUploader"
+                    sameFilenameAllowed="false"
+                    width="100%"
+                    fileType="CSV"
+                    buttonText="{i18n>Search}"
+                    placeholder="{i18n>UploadFilePlaceholder}"
+                    style="Emphasized"
+                />
+                <Button id="_IDButtonUpload"
+                    text="Upload"
+                    icon="sap-icon://upload"
+                    press="_onPressUploadButton"
+                />
+            </l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>
